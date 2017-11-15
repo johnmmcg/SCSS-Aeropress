@@ -27,7 +27,7 @@ html {
   animation: move;
   animation-delay: 13s;
   animation-duration: 10s;
-  
+
   .top{
     margin: auto;
     width: 120px;
@@ -40,7 +40,7 @@ html {
     animation: brew;
     animation-duration: 15s;
     animation-delay: 0s;
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -50,7 +50,7 @@ html {
       border-radius: 10%;
       transform: translate(-110px, -10px)
     }
-    
+
     &::after{
       content: "";
       position: absolute;
@@ -62,14 +62,14 @@ html {
       border-top-right-radius: 50%;
     }
   }
-  
+
   .bottom {
     margin: auto;
     width: 140px;
     height: 300px;
     border: solid black 10px;
     border-radius: 5%;
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -80,7 +80,7 @@ html {
       transform: translate(-135px, 300px);
     }
   }
-  
+
   .grounds {
     position: absolute;
     width: 140px;
@@ -91,7 +91,7 @@ html {
      background-color: #352312;
     z-index: 0;
   }
-  
+
   .liquid {
     position: absolute;
     left: -3%;
@@ -103,14 +103,14 @@ html {
     z-index: -1;
     transform: translate(14px, -20px)
   }
-  
+
   .filter {
     margin: auto;
     width: 145px;
     height: 15px;
     background: black;
     border-bottom: dashed black 5px;
-    
+
     .hole {
       float: left;
       margin-left: 15px;
@@ -120,7 +120,7 @@ html {
       border-radius: 10px;
       overflow: hidden;
       opacity: 1.0;
-      
+
       .drip {
         position: absolute;
         width: 10px;
@@ -141,7 +141,7 @@ html {
 
 .mug {
   position: absolute;
-  top: 73%;
+  top: 700px;
   left: 44.2%;
   transform: translate(0px,0px) rotate(0deg);
   width: 150px;
@@ -155,7 +155,7 @@ html {
   animation: drink;
   animation-delay: 14s;
   animation-duration: 10s;
-  
+
   .handle {
     width: 35px;
     height: 100px;
@@ -165,7 +165,7 @@ html {
     border-bottom-right-radius: 35%;
     border-top-right-radius: 35%;
   }
-  
+
   .coffee {
     position: absolute;
     background: $coffee;
