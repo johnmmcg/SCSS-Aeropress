@@ -22,6 +22,9 @@ html {
   top: 3.5%;
   z-index: 2;
   transform: translate(0px, 30px);
+  animation: move;
+  animation-delay: 13s;
+  animation-duration: 10s;
 }
 .aeropress .top {
   margin: auto;
@@ -31,10 +34,10 @@ html {
   border-radius: 5%;
   border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%;
-  transform: translate(225px, -75px) rotate(45deg);
+  transform: translate(0px, 0px) rotate(0deg);
   animation: brew;
-  animation-duration: 10s;
-  animation-delay: 4s;
+  animation-duration: 15s;
+  animation-delay: 0s;
 }
 .aeropress .top::before {
   content: "";
@@ -48,10 +51,10 @@ html {
 .aeropress .top::after {
   content: "";
   position: absolute;
-  width: 140px;
+  width: 142px;
   height: 30px;
   background: black;
-  transform: translate(-70px, 300px);
+  transform: translate(-72px, 300px);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
@@ -73,10 +76,10 @@ html {
 }
 .aeropress .grounds {
   position: absolute;
-  width: 138px;
+  width: 140px;
   height: 75px;
   top: 85%;
-  left: 7%;
+  left: 6%;
   background-image: url(data:image/png;base64,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);
   background-color: #352312;
   z-index: 0;
@@ -99,11 +102,35 @@ html {
   background: black;
   border-bottom: dashed black 5px;
 }
+.aeropress .filter .hole {
+  float: left;
+  margin-left: 15px;
+  width: 10px;
+  height: 15px;
+  background-color: #352312;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 1.0;
+}
+.aeropress .filter .hole .drip {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #352312;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 1.0;
+  z-index: -3;
+  animation: drips;
+  animation-delay: 8s;
+  animation-duration: 7s;
+}
 
 .mug {
   position: absolute;
-  top: 70%;
-  left: 44.4%;
+  top: 73%;
+  left: 44.2%;
+  transform: translate(0px, 0px) rotate(0deg);
   width: 150px;
   height: 150px;
   background: transparent;
@@ -112,6 +139,9 @@ html {
   border-bottom-right-radius: 20%;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
+  animation: drink;
+  animation-delay: 14s;
+  animation-duration: 10s;
 }
 .mug .handle {
   width: 35px;
@@ -125,42 +155,136 @@ html {
 .mug .coffee {
   position: absolute;
   background: #352312;
-  z-index: -2;
-  width: 155px;
+  overflow: hidden;
+  z-index: -4;
+  transform: translate(-5px, 0px);
+  width: 160px;
   height: 1px;
-  bottom: 0;
+  bottom: -1%;
   border-bottom-left-radius: 15%;
   border-bottom-right-radius: 20%;
   animation: fillup;
   animation-delay: 8s;
-  animation-duration: 7s;
+  animation-duration: 15s;
 }
 
 @keyframes brew {
-  5% {
-    transform: translate(0px, -25px) rotate(0deg);
+  2% {
+    transform: translate(0px, -30px) rotate(0deg);
   }
-  10% {
-    transform: translate(0px, 10px);
+  4% {
+    transform: translate(200px, -30px) rotate(45deg);
+  }
+  25% {
+    transform: translate(200px, -30px) rotate(45deg);
+  }
+  31% {
+    transform: translate(0px, -20px) rotate(0deg);
   }
   40% {
+    transform: translate(0px, 10px);
+  }
+  53% {
     transform: translate(0px, 10px);
   }
   80% {
     transform: translate(0px, 200px);
   }
-  95% {
-    transform: translate(0px, -20px);
+  82% {
+    transform: translate(0px, 200px);
+  }
+  87% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+@keyframes drink {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  7% {
+    transform: translate(1000px, -300px) rotate(45deg);
+  }
+  25% {
+    transform: translate(1000px, -300px) rotate(45deg);
+  }
+  35% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 @keyframes fillup {
   0% {
     height: 0px;
   }
+  30% {
+    height: 120px;
+  }
   50% {
     height: 120px;
   }
+  60% {
+    height: 0px;
+  }
   100% {
     height: 0px;
+  }
+}
+@keyframes drips {
+  0% {
+    height: 10px;
+  }
+  8% {
+    height: 150px;
+  }
+  55% {
+    height: 140px;
+    transform: translate(0px, 0px);
+    opacity: 1.0;
+  }
+  60% {
+    height: 10px;
+    transform: translate(0px, 100px);
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    height: 0px;
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 30px);
+  }
+  3% {
+    transform: translate(0px, -20px);
+  }
+  8% {
+    transform: translate(-300px, -20px);
+  }
+  11% {
+    transform: translate(-300px, 180px);
+  }
+  40% {
+    transform: translate(-300px, 180px);
+  }
+  43% {
+    transform: translate(-300px, -20px);
+  }
+  48% {
+    transform: translate(0px, -20px);
+  }
+  51% {
+    transform: translate(0px, 30px);
+  }
+  100% {
+    transform: translate(0px, 30px);
   }
 }
