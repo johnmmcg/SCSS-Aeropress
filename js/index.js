@@ -1,20 +1,22 @@
-$(document).ready(function() {        $('.pour')
+$(document).ready(function() {        
+  $('.pour')
     .delay(500)
     .animate({
       height: '700px',
-      left: '49%'
+      left: '655px'
       }, 1000)
     .animate({ 
-      left: '48%'
+      left: '690px'
       }, 700)
      .animate({ 
-      left: '50%'
+      left: '660px'
       }, 700)
     .animate({ 
-      left: '48%',
-      bottom: '300px',
+      left: '675px',
+      bottom: '900px',
       height: '50px'
-      }, 700)                             .animate({
+      }, 700)                             
+    .animate({
       opacity: '0'
     }, 100)
   
@@ -23,7 +25,7 @@ $(document).ready(function() {        $('.pour')
     .animate({
       height: '250px'
     }, 2900)
-  .delay(4000)
+  .delay(3000)
   .animate({
     height: '0px'
     }, 2500)
