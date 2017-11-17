@@ -25,7 +25,7 @@ $(document).ready(function() {
     .animate({
       height: '250px'
     }, 2900)
-  .delay(3000)
+  .delay(4000)
   .animate({
     height: '0px'
     }, 2500)
